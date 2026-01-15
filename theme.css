@@ -36,7 +36,7 @@
   --background-secondary-alt:   var(--m-white);
 	--background-non-active-tab: purple;
   --file-header-background: yellow;
-  --file-header-background-focused: white;
+  --file-header-background-focused: var(--m-white);
   --tab-container-background: white;
   --tab-background-active: var(--m-white);
 		
