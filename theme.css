@@ -1,0 +1,1691 @@
+/*CSS document */
+/*qq- new theme BC2026*/
+/* last update-2026-01-08 */
+
+.theme-light{
+  --m-white: rgb(250,250,250);
+  --m-black: rgb(0,0,0);
+  --m-dgray: rgb(80,80,80);
+  --m-navy: rgb(0,0,128);
+  --m-blue: rgb(0,0,255);
+  --m-silver: rgb(200,200,200);
+  --m-red: rgb(220,20,60);
+  --m-lime:rgb(124,252,0);
+  --m-green:rgb(0,100,0);
+	--m-teal: rgb(0,128,128);
+	--m-yellow: yellow;
+  --m-light-silver: rgb(230,230,230);
+  
+  --m-blue-highlight:rgb(202,228,255);
+  --m-green-highlight:rgb(196,255,206);
+  --m-orange-highlight:rgb(255,218,150);
+	--m-yellow-highlight: rgb(255,250,210);
+  --m-blue-embed: rgb(202,224,255, 40%);
+	
+  /*qq Headings*/
+	--h1-color: var(--m-navy);
+	--h2-color: var(--m-blue);
+	--h3-color: rgb(0,100,100);
+	--h4-color: rgb(0,128,128);
+	--h5-color: #2F4F4F;
+	--h6-color: dimgray;
+  
+  --background-primary:          var(--m-white);
+  --background-primary-alt:      var(--m-white);
+  --background-secondary:        var(--m-white);
+  --background-secondary-alt:   var(--m-white);
+	--background-non-active-tab: purple;
+  --file-header-background: yellow;
+  --file-header-background-focused: white;
+  --tab-container-background: white;
+  --tab-background-active: var(--m-white);
+		
+	--text-normal: black; 
+	--text-muted: gray; 
+	--text-faint: silver; 
+	--text-on-accent: var(--m-white); 
+	--text-on-accent-inverted: lime; 
+	--text-error: var(--color-red); 
+	--text-warning: var(--color-orange); 
+	--text-success: var(--color-green); 
+	--text-selection: rgb(255,218,150); 
+	--text-highlight-bg-rgb: 0, 208, 0; 
+	--text-highlight-bg: yellow; 
+  --table-border-color: silver;
+  
+	
+/* Lists */
+  --list-bullet-size: 7px !important;
+	--list-marker-color: var(--m-navy);
+/* Checkboxes */
+	--checkbox-radius: var(--radius-s);
+	--checkbox-size: var(--font-text-size);
+	--checkbox-marker-color: var(--m-red);
+	--checkbox-color: var(--m-white);
+	--checkbox-color-hover: var(--m-white);
+	--checkbox-border-color: var(--m-navy);
+	--checkbox-border-color-hover: var(--m-navy);
+	--checkbox-margin-inline-start: 0.85em;
+	--checklist-done-decoration: line-through;
+	--checklist-done-color: var(--text-muted);
+  
+
+  
+/* Tabs -------*/
+--tab-text-color: black;	
+--tab-text-color-active: navy;
+--tab-text-color-focused: var(--m-white);
+--tab-text-color-focused-active:pink;
+--tab-text-color-focused-highlighted: navy;
+--tab-text-color-focused-active-current: navy;
+--tab-divider-color: palegreen;	 
+--tab-outline-color: black;	 
+--tab-outline-width: 1px;
+
+/*Tags*/
+--tag-size: 12px;
+--tag-background: palegreen;
+--tag-background-hover: aqua;
+--tag-border-color: green;
+--tag-color: var(--m-black);
+--tag-border-width: 1px;
+--tag-radius: 4px;
+--tag-padding-x: 5px;
+--tag-padding-y: 1px;
+
+/*qq Properties - custom value*/
+--metadata-label-text-color: black;
+--metadata-label-font-size: 13px;
+--metadata-input-background: silver;
+--metadata-input-padding: 5px;
+--input-border-width: 1px;
+--metadata-border-color: navy;
+--metadata-border-width: 1px;
+--metadata-padding: 5px;
+--pill-background: var(--m-white);
+--pill-radius:2px;
+
+/*Bases*/
+
+
+/*qq External plugin - Notebook navigator*/
+
+/*Folders and tags - NN*/
+  --nn-setting-nav-padding-vertical-mobile: 2px;
+  --nn-theme-navitem-count-bg: red;
+  --nn-theme-navitem-count-color: var(--m-white);
+  --nn-theme-navitem-count-border-radius: 4px;
+  
+  --nn-theme-navitem-name-color: navy;
+  --nn-theme-navitem-selected-inactive-name-color: navy;
+  --nn-theme-navitem-selected-name-color: navy;
+  --nn-theme-navitem-selected-bg: var(--m-blue-highlight);
+  --nn-theme-navitem-selected-inactive-bg:  var(--m-blue-highlight);
+  --nn-theme-navitem-hover-bg:  var(--m-blue-highlight);
+  --nn-theme-navitem-name-font-weight: 600;
+  
+/*Files - NN*/
+  --nn-theme-list-header-breadcrumb-color: navy;
+  
+  --nn-theme-file-name-color: var(--m-green);
+  --nn-theme-file-selected-bg: var(--m-green-highlight);
+  --nn-theme-file-selected-inactive-bg-solid:  var(--m-green-highlight);
+  
+  --nn-theme-header-button-icon-color: var(--m-black);
+}
+
+
+
+/* for mobile*/
+.app-container,
+body{
+  border-top: 1px solid var(--m-dgray);
+  background-color: var(--m-white);
+  /*padding-top: 35px;*/
+}
+
+/*qq- Diferent reand and edit mode*/
+
+/* read mode*/
+
+.markdown-reading-view{
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-color: var(--m-silver);
+  /*background-color: aqua;*/
+  font-size: 13px;
+}
+
+.is-mobile .markdown-reading-view{
+  font-size: 15px;
+}
+
+/*qq Live Preview, Source mode*/
+div.cm-scroller{
+  background-color: var(--m-white) !important;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-color: var(--m-blue);
+	padding-top: 3px !important;
+  font-size: 13px;
+}
+
+.cm-active.cm-line,
+.HyperMD-list-line.HyperMD-list-line-1.cm-line{
+  background-color: var(--m-white) !important;
+}
+
+.is-mobile div.cm-scroller{
+  font-size: 15px;
+}
+
+/*move under topbar !!!*/
+.is-phone .cm-scroller{
+  padding-top: 95px !important;
+}
+
+/*Tabs - top*/
+.workspace-tabs.mod-top .workspace-tab-header-container{
+  background-color: var(--m-light-silver) !important;
+}
+
+.workspace-tab-header-inner-title{
+  color: var(--m-black);
+}
+
+.workspace-tab-header-inner::after{
+   background-color: var(--m-black) !important;
+}
+
+/*Buttons new-tab, tab-list*/
+.workspace-tab-header-new-tab .clickable-icon,
+.workspace-tab-header-new-tab .clickable-icon svg,
+.workspace-tab-header-tab-list .clickable-icon,
+.workspace-tab-header-tab-list .clickable-icon svg{
+  background-color: var(--m-dgray) !important;
+  color: var(--m-white) !important;
+  border-radius: 0px;
+}
+
+/* Tabs - left sidebar*/
+.workspace-ribbon.side-dock-ribbon.mod-left::before,
+.workspace-split.mod-horizontal.mod-sidedock.mod-left-split  .workspace-tab-header-container{
+  background-color: var(--m-light-silver) !important;
+}
+
+
+/* Tabs - right sidebar*/
+.workspace-tabs.mod-top.mod-top-right-space .workspace-tab-header-container{
+  background-color: var(--m-light-silver) !important;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+
+/*icon off sidebar*/
+.sidebar-toggle-button.mod-right{
+  background-color: var(--m-light-silver) !important;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+
+.workspace-tab-header.tappable.is-active,
+.workspace-tab-header.tappable.is-active .workspace-tab-header-inner-icon,
+.workspace-tab-header.tappable.is-active svg,
+.workspace-tab-header.tappable.is-active.mod-active,
+.workspace-tab-header.tappable.is-active.mod-active:hover{
+  background-color: var(--m-white) !important;
+  color: black !important;
+}
+
+.workspace-split.mod-vertical.mod-root{
+  border-width: 0px 1px !important;
+  border-color: black !important;
+  border-style: solid !important;
+}
+
+.view-header,
+.view-header button{
+  background-color: var(--m-white) !important;
+  padding: 2px;
+}
+
+/*qq path to file*/
+.view-header-breadcrumb,
+.view-header-breadcrumb-separator{
+	font-size: 13px;
+	color: var(--m-navy) !important;
+  font-weight: 500;
+}
+
+/*qq file name off note*/
+.view-header-title{
+	font-size: 13px;
+	color: var(--m-green) !important;
+  font-weight: 500;
+  opacity: 1 !important;
+  font-weight: 500;
+  text-wrap: wrap;
+}
+
+.is-phone .view-header{
+  background-color: var(--m-white) !important;
+}
+
+.is-phone .sidebar-toggle-button.mod-left,
+.is-phone .view-actions.mod-raised{
+  border-radius: 0px !important;
+   background-color: var(--m-white) !important;
+  border: 0px red !important; 
+}
+
+
+
+/*sidebar togle mobile*/
+.workspace-drawer.mod-right .workspace-tab-header-inner,
+.workspace-drawer.mod-right .workspace-tab-header.is-active .workspace-tab-header-inner,
+.workspace-drawer.mod-right .workspace-drawer-tab-options.is-collapsed,
+.workspace-drawer.mod-right .workspace-drawer-tab-options.is-collapsed .workspace-tab-header-inner,
+.workspace-drawer.mod-right .workspace-drawer-tab-options.is-collapsed .workspace-tab-header-inner:hover,
+
+.workspace-drawer.mod-left .workspace-tab-header-inner,
+.workspace-drawer.mod-left .workspace-tab-header.is-active .workspace-tab-header-inner,
+.workspace-drawer.mod-left .workspace-drawer-tab-options.is-collapsed,
+.workspace-drawer.mod-left .workspace-drawer-tab-options.is-collapsed .workspace-tab-header-inner,
+.workspace-drawer.mod-left .workspace-drawer-tab-options.is-collapsed .workspace-tab-header-inner:hover{
+  background-color: var(--m-navy) !important;
+  color: var(--m-white) !important;
+}
+
+.workspace-drawer.mod-left .workspace-tab-header-inner svg,
+.workspace-drawer.mod-right .workspace-tab-header-inner svg,
+.workspace-drawer.mod-left .workspace-drawer-tab-options.is-collapsed svg,
+.workspace-drawer.mod-righ .workspace-drawer-tab-options.is-collapsed svg{
+  color: var(--m-white);
+}
+
+
+/*změna barvy ikony u mobilní verze*/
+.workspace-drawer-tab-options-list .workspace-tab-header.tappable.is-active .workspace-tab-header-inner-icon,
+.workspace-drawer-tab-options-list .workspace-tab-header.tappable.is-active svg,
+
+
+
+.workspace-drawer.mod-right .workspace-drawer-tab-options-list svg,
+.workspace-drawer.mod-right .workspace-drawer-tab-options-list,
+.workspace-drawer.mod-right .workspace-tab-header.tappable.is-active.mod-active,
+
+.workspace-drawer.mod-left .workspace-drawer-tab-options-list svg,
+.workspace-drawer.mod-left .workspace-drawer-tab-options-list,
+.workspace-drawer.mod-left .workspace-tab-header.tappable.is-active.mod-active{
+  background-color: var(--m-navy) !important;
+  color: white !important;
+}
+
+.workspace-drawer.mod-left .workspace-drawer-tab-options-list,
+.workspace-drawer.mod-right .workspace-drawer-tab-options-list{
+  margin-bottom: 3px !important;
+  border-radius: 4px !important;
+}
+
+.workspace-tab-header-inner{
+  border-radius: 4px !important;
+}
+
+.workspace-tab-header-inner:hover{
+  border-radius: 4px !important;
+}
+
+.vertical-tab-header-group-items{
+  border-radius: 0px !important;
+}
+
+.workspace-drawer-tab-options .workspace-tab-header-inner-title,
+.workspace-drawer-tab-options .workspace-tab-header-inner svg,
+.workspace-drawer-tab-options .workspace-tab-header-inner svg:hover,
+.workspace-drawer-tab-options .workspace-tab-header-inner-title:hover{
+  color: var(--m-white) !important;
+  /*color: yellow !important;*/
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.workspace-tab-header.workspace-drawer-tab-select .workspace-tab-header-inner{
+  padding: 5px !important;
+}
+
+/*Icon off top tab Example Taskboard*/
+.workspace-tabs.mod-visible.mod-active.mod-top.mod-top-left-space.mod-top-right-space .workspace-tab-header-inner-icon{
+  background-color: transparent !important;
+}
+
+.workspace-tabs.mod-visible.mod-active.mod-top.mod-top-left-space.mod-top-right-space .workspace-tab-header-inner-icon svg{
+  color: black !important;
+}
+
+/*Menu open tabs*/
+.menu.mod-tab-list .menu-item.tappable[data-section="tablist"],
+.menu.mod-tab-list .menu-item.tappable[data-section="tablist"] svg{
+  color: var(--m-green);
+}
+
+.menu.mod-tab-list .menu-item.tappable[data-section="tablist"]:hover{
+  background-color: var(--m-green-highlight) !important;
+}
+
+
+
+/*Properties*/
+
+.metadata-properties-heading{
+  margin-left: 25px;
+}
+
+.metadata-container{
+  margin: 2px 5px;
+  padding: 2px !important;
+  display: flex;
+ 
+}
+
+.metadata-content{
+  background-color: var(--m-white) !important;
+  transform: none !important;
+  padding: 2px !important;
+  border-radius: 0px !important;
+  width: 100% !important;
+}
+
+.metadata-property,
+.metadata-property:hover,
+.metadata-property-value:hover,
+.metadata-property-value{
+  background-color: var(--m-white);
+   border-radius: 0px;
+}
+
+.metadata-property-key-input{
+  padding: 4px !important;
+}
+
+.multi-select-pill,
+.multi-select-pill:hover{
+  border: solid navy 1px;
+  padding: 2px 5px;
+}
+
+.metadata-properties svg{
+  color: var(--m-black);
+}
+
+
+/* button add property*/
+.metadata-add-button.text-icon-button,
+.metadata-add-button.text-icon-button.mobile-tap,
+.metadata-add-button.text-icon-button:hover{
+  background-color: navy !important;
+  opacity: 1;
+	margin-bottom: 5px;
+  border-radius: 0px;
+  color: var(--m-white);
+}
+
+.metadata-container .metadata-add-button.text-icon-button .svg-icon.lucide-plus{
+  color: var(--m-white);
+}
+
+
+
+/*Buttons*/
+
+.svg-icon.right-triangle,
+.clickable-icon svg{
+  color: black !important;
+}
+
+.clickable-icon.is-active{
+	background-color: teal  !important;
+  border-radius: 0px;
+}
+
+.clickable-icon.is-active svg{
+  color: var(--m-white)  !important;
+}
+
+
+svg.svg-icon.lucide-x,
+.workspace-tab-header.tappable.is-active svg.svg-icon.lucide-x{
+  background-color: red !important;
+  color: white !important;
+}
+
+.svg-icon.lucide-trash-2{
+  color: red !important;
+}
+
+.clickable-icon.workspace-drawer-header-icon.mod-raised.mod-settings,
+.clickable-icon.workspace-drawer-header-icon.mod-raised.mod-pin{
+  background-color: var(--m-white) !important;
+  /*background-color: aqua !important;*/
+  background-image: none;
+  box-shadow: none;
+  border-radius: 0px;
+  border-color: var(--m-white);
+}
+
+/*Přepínače*/
+.checkbox-container{
+  background-color: var(--m-dgray) !important;
+  border-radius: 0px;
+}
+
+.checkbox-container.is-enabled{
+   background-color: var(--m-teal) !important;
+   border-radius: 0px;
+}
+
+
+
+.checkbox-container.is-enabled::after,
+.checkbox-container::after,
+.checkbox-container{
+  border-radius: 3px !important;
+  /*width: 20px;*/
+}
+
+/* Vault name */
+.workspace-drawer-header-name-text{
+  font-size: 15px !important;
+}
+
+.workspace-drawer-header{
+  padding-top: 3px;
+  padding-bottom: 10px;
+  padding-right: 2px;
+  background-color: var(--m-white);
+  gap: 0px;
+}
+
+.is-tablet .workspace-drawer-header{
+  padding-left: 5px;
+}
+
+/*Statusbar*/
+.status-bar{
+	background-color: black;
+	color: var(--m-white);
+}
+
+.status-bar-item.plugin-obsidian-spaced-repetition.mod-clickable,
+.status-bar-item.plugin-properties.mod-clickable,
+.status-bar-item.plugin-backlink.mod-clickable{
+  margin: 2px;
+}
+
+.status-bar-item.plugin-obsidian-spaced-repetition.mod-clickable:hover,
+.status-bar-item.plugin-properties.mod-clickable:hover,
+.status-bar-item.plugin-backlink.mod-clickable:hover{
+  background-color: lime !important;
+  color: var(--m-black);
+  margin: 2px;
+}
+
+.status-bar-item.plugin-editor-status.mod-clickable,
+.status-bar-item.plugin-sync{
+	background-color: lime !important;
+	margin: 0px 3px;
+}
+
+.status-bar-item.plugin-editor-status.mod-clickable svg{
+  color: var(--m-black) !important;
+}
+
+/*icon  stavu sync and done*/
+.status-bar-item-icon.sync-status-icon{
+  background-color: lime !important;
+}
+
+.status-bar-item-icon.sync-status-icon svg{
+  color: var(--m-black) !important;
+  height: 24px;
+  width: 24px;
+}
+
+/* Status bar mobil tablet*/
+.clickable-icon.workspace-drawer-header-icon.mod-raised.sync-status-icon.mod-working .mod-spin,
+.clickable-icon.workspace-drawer-header-icon.mod-raised.sync-status-icon.mod-working svg,
+.clickable-icon.workspace-drawer-header-icon.mod-raised.sync-status-icon.mod-success .svg-icon.check-small{
+  background-color: black !important;
+  color: lime !important;
+  height: 40px;
+  width: 60px !important;
+  padding: 2px !important;
+}
+
+.workspace-drawer.mod-right .workspace-drawer-header{
+  padding-right: 20px !important;
+}
+
+/*forms*/
+input[type=search],
+.prompt-input,
+.is-tablet .prompt-input{
+   border-radius: 0px !important;
+   border: 1px solid var(--m-dgray) !important;
+   color: navy !important;
+   margin: 3px;
+}
+
+input[type=search]::placeholder{
+  color: var(--m-dgray);
+}
+
+
+.menu-item:hover{
+	background-color: var(--m-orange-highlight) !important;
+	/*height: 30px;*/
+  border-radius: 0px;
+}
+
+/*qq numbers - items count*/
+.tree-item-flair,
+.tag-pane-tag-count{
+ font-size: 13px;
+ font-weight: 300;
+ background-color: var(--m-red);
+ color: var(--m-white);
+ padding: 2px 5px;
+}
+
+/*qq icon of file*/
+.nav-file-tag{
+ background-color: var(--m-red);
+ color: var(--m-white);
+ font-size: 9px;
+ padding: 0px 2px 0px 2px ;
+ margin: 0px 0px 0px 3px;
+} 
+
+/* při najetí se nemění barva číslice*/
+.tree-item-self.is-clickable:hover .tree-item-flair{
+ color: var(--m-white);
+} 
+
+
+.workspace-drawer.mod-left,
+.workspace-drawer.mod-right{
+  border-radius: 0px !important;
+}
+
+/*qq dolní lišta mobil*/
+.mobile-navbar-actions,
+.mobile-navbar.mod-raised,
+.mobile-navbar.mod-raised .clickable-icon{
+  border-radius: 0px !important;
+  background-color: white !important;
+  padding: 0px;
+  border: 0px solid red;
+}
+
+/*qq menu*/
+
+/*.suggestion-item.mod-complex,*/
+.is-tablet .menu-item,
+.is-phone .menu-item{
+	height: 36px;
+	font-size: 17px;
+ /* border: 1px solid var(--m-silver) !important;*/
+ border: 0px solid white !important;
+ /*background-color: lime;*/
+ /*margin: 1px;*/
+ background-color: var(--m-white) !important;
+ border-radius: 0px;
+}
+
+
+.menu-item:hover{
+	background-color: var(--m-orange-highlight) !important;
+	/*height: 30px;*/
+  border-radius: 0px;
+}
+
+.prompt,
+.is-mobile .menu,
+.is-mobile .menu-scroll{
+	background-color: var(--m-white) !important;
+	max-height: 95% !important;
+  border-radius: 0px !important;
+}
+
+.suggestion-item.mod-complex.is-selected{
+  background-color: var(--m-orange-highlight) !important;
+  border-radius: 0px;
+}
+
+input[type=search],
+.prompt-input,
+.is-tablet .prompt-input{
+   border-radius: 0px !important;
+   border: 1px solid var(--m-dgray) !important;
+}
+
+
+
+.is-phone .menu-scroll{
+  max-height: 95% !important;
+  background-color: var(--m-white) !important;
+}
+
+.is-phone .menu-separator{
+  margin: 0px;
+}
+
+
+
+.modal{
+  border-radius: 0px !important;
+  width: 55%;
+}
+
+.mobile-image-viewer {
+  background-color: black;
+  color: lime !important;
+  border: 0px !important;
+  height: 100%;
+  padding: 0px !important;
+}
+
+/*qq- Sidebar - Files --------*/
+
+/*qq Explorer - files*/
+.nav-file-title,
+.nav-file-title-content {
+  color: var(--m-green);
+  font-size: 13px;
+}
+
+.is-mobile  .nav-file-title-content{
+  font-size: 17px;
+}
+.nav-files-container.node-insert-event .is-mobile .nav-file.has-focus,
+.nav-files-container.node-insert-event .nav-file-title:hover,
+.nav-files-container.node-insert-event .nav-file-title.is-active,
+.nav-files-container.node-insert-event .nav-file-title.is-active:hover{
+  background-color: var(--m-green-highlight) !important;
+  color: var(--m-green)  !important;
+}
+
+/*nefunguje*/
+.nav-files-container.node-insert-event .nav-file-title.is-active nav-file-tag:hover{
+  background-color: var(--m-white);
+}
+
+
+
+
+/*qq Explorer - folders*/
+
+.nav-folder-title {
+  color: var(--m-navy);
+  font-weight: 600;
+  white-space: normal;
+}
+
+.nav-folder-title-content {
+  color: var(--m-navy);
+  font-size :13px;
+  font-weight: 600;  
+}
+
+.is-mobile .nav-folder-title-content {
+	font-size: 16px;
+} 
+
+.tree-item-self.is-clickable.nav-folder-title:hover,
+.tree-item-self.is-clickable.mod-collapsible.nav-folder-title:hover{
+background-color: var(--m-blue-highlight) !important;
+font-weight: 600;
+}
+
+
+/*qq numbers - items count*/
+.tree-item-flair,
+.tag-pane-tag-count{
+ font-size: 13px;
+ font-weight: 300;
+ background-color: var(--m-red);
+ color: var(--m-white);
+ padding: 2px 5px;
+}
+
+/*qq icon of file*/
+.nav-file-tag{
+ background-color: var(--m-red);
+ color: var(--m-white);
+ font-size: 9px;
+ padding: 0px 2px 0px 2px ;
+ margin: 0px 0px 0px 3px;
+} 
+
+
+
+/* při najetí se nemění barva číslice*/
+.tree-item-self.is-clickable:hover .tree-item-flair{
+ color: var(--m-white);
+} 
+
+/*qq path to file*/
+.view-header-breadcrumb,
+.view-header-breadcrumb-separator{
+	font-size: 13px;
+	color: var(--m-black);
+}
+
+/*qq file name*/
+.view-header-title{
+	font-size: 13px;
+	color: var(--m-green) !important;
+  font-weight: 500;
+  opacity: 1 !important;
+}
+
+.workspace-drawer-vault-actions{
+  padding-right: 0px !important;
+  margin-right: 10px !important;
+}
+
+/*qq Dialog Preferences*/
+.vertical-tab-header-group-title{
+	color: var(--m-navy);
+	background-color: var(--m-blue-highlight);
+}
+
+.vertical-tab-content button{
+  background-color: var(--m-teal);
+  color: var(--m-white);
+}
+
+input.slider{
+  background-color: teal !important;
+}
+
+.tooltip.mod-top{
+  background-color: teal !important;
+}
+
+
+.vertical-tab-nav-item.tappable{
+ border-radius: 4px;
+}
+  
+select::after,
+select.dropdown,
+option,
+button{
+  background-color: teal !important;
+  color: white !important;
+  border-radius: 6px;
+}
+
+/* oznámení zejména na mobilu a tabletu*/
+div.notice{
+	background-color: var(--m-blue-highlight) !important;
+	color: black;
+	
+}
+
+.vertical-tab-nav-item.tappable.is-active svg,
+.vertical-tab-nav-item.tappable.is-active,
+.modal-button-container button{
+  background-color: var(--m-teal) !important;
+  color: var(--m-white);
+}
+
+.vertical-tab-nav-item.tappable:hover{
+  background-color:  var(--m-orange-highlight);
+}
+
+.vertical-tab-nav-item.tappable svg{
+  color: var(--m-black);
+}
+
+/*qq- Sidebar - Search ------------*/
+.search-results-info,
+/* panel search - rozšířené info */
+.search-result-file-matches{
+	/*border-color: white !important; - nefunguje*/
+	color: var(--m-dgray);
+}
+
+.input-right-decorator.clickable-icon.is-active{
+  border-radius: 0px;
+ 
+}
+
+.search-info-container{
+	color:  var(--m-dgray);
+}
+/* seznam nalezených poznámek*/
+.tree-item-self.search-result-file-title.is-clickable{
+	color: var(--m-green);
+	font-size: 13px;
+}
+
+.tree-item-self.search-result-file-title.is-clickable:hover{
+  background-color:  var(--m-green-highlight) !important;
+  color: var(--m-green) !important;
+}
+
+.is-mobile .tree-item-self.search-result-file-title.is-clickable{
+	font-size: 15px;
+	font-weight: 500;
+} 
+
+/*qq- Sidebar - Outgoing links -----------------*/
+
+/*nadpis links - zatím nefunguje*/
+.outgoing-link-pane.node-insert-event .tree-item-self.is-clickable{
+	color: var(--m-dgray) !important;
+}
+
+/* link to file */
+.outgoing-link-pane.node-insert-event .tree-item-inner{
+	color: var(--m-green);
+	font-size: 13px;
+}
+
+.is-mobile .outgoing-link-pane.node-insert-event .tree-item-inner{
+	font-size: 17px;
+} 
+
+/* path to file */
+.outgoing-link-pane.node-insert-event .tree-item-inner .tree-item-inner-subtext{
+	color: var(--m-navy);
+}
+
+.is-mobile .outgoing-link-pane.node-insert-event .tree-item-inner .tree-item-inner-subtext{
+	font-size: 14px;
+} 
+
+/* najetí na odchozí odkazy */
+.outgoing-link-pane.node-insert-event .tree-item-self.is-clickable.outgoing-link-item:hover{
+	background-color: var(--m-green-highlight);
+  border-radius: 0px;
+}
+
+.outgoing-link-pane.node-insert-event svg{
+  color: var(--m-green);
+}
+
+/*qq Sidebar - Outline ---------------------*/
+.search-input-container{
+  top: 10px;
+}
+
+.view-content.node-insert-event .tree-item-self.is-clickable{
+	color: var(--m-navy);
+	font-size: 13px;
+}
+
+.is-mobile .view-content.node-insert-event .tree-item-self.is-clickable{
+	font-size: 17px;	
+} 
+
+.workspace-leaf-content[data-type="outline"] .tree-item-self.is-clickable.is-active,
+.view-content.node-insert-event .tree-item-self.is-clickable:hover{
+	background-color: var(--m-blue-highlight) !important;
+	color: var(--m-navy) !important;
+  border-radius: 3px;
+}
+
+/*xx Markdown format*/
+/*qq- Headings*/
+
+.cm-active.HyperMD-header.HyperMD-header-1.cm-line,
+.HyperMD-header.HyperMD-header-1.cm-line,
+.HyperMD-header.HyperMD-header-2.cm-line,
+.HyperMD-header.HyperMD-header-3.cm-line,
+.HyperMD-header.HyperMD-header-4.cm-line,
+.HyperMD-header.HyperMD-header-5.cm-line,
+.HyperMD-header.HyperMD-header-6.cm-line{
+	/*background-color: yellow;*/
+	text-decoration: underline;
+}
+
+/* nadpis H1*/
+h1,
+.markdown-rendered h1,
+.markdown-preview-view h1,
+h1 span,
+.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-1,
+div.HyperMD-header.HyperMD-header-1.cm-line,
+.cm-header.cm-header-1{
+	color: var(--h1-color);
+  font-size: 20px;
+  font-weight:bold;
+  width: 100%;  
+  padding-bottom: 5px;
+}
+
+/* nadpis H2*/
+h2, 
+.markdown-rendered h2,
+.markdown-preview-view h2,
+h2 span,
+.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2,
+div.HyperMD-header.HyperMD-header-2.cm-line,
+.cm-header.cm-header-2{
+	color: var(--h2-color);
+  font-size: 19px;
+  font-weight:bold;
+  padding-bottom: 5px;
+}
+
+/* nadpis H3*/
+h3, 
+.markdown-rendered h3,
+.markdown-preview-view h3,
+h3 span,
+.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-3,
+div.HyperMD-header.HyperMD-header-3.cm-line,
+.cm-header.cm-header-3{
+	color: var(--h3-color);
+  font-size: 18px;
+  font-weight:bold;
+  padding-bottom: 5px;
+}
+
+/* nadpis H4*/
+h4, 
+.markdown-rendered h4,
+.markdown-preview-view h4,
+h4 span,
+.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-4,
+div.HyperMD-header.HyperMD-header-4.cm-line,
+.cm-header.cm-header-4{
+	color: var(--h4-color);
+  font-size:17px;
+  font-weight:bold;
+  padding-bottom: 5px;
+}
+
+/* nadpis H5*/
+h5, 
+.markdown-rendered h5,
+.markdown-preview-view h5,
+h5 span,
+.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-5,
+div.HyperMD-header.HyperMD-header-5.cm-line,
+.cm-header.cm-header-5 {
+	color: var(--h5-color);
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+/* nadpis H6*/
+h6, 
+.markdown-rendered h6,
+.markdown-preview-view h6,
+h6 span,
+.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-6,
+div.HyperMD-header.HyperMD-header-6.cm-line,
+.cm-header.cm-header-6 {
+	color: var(--h6-color);
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+/*qq external links */
+.cm-list-1.cm-url .cm-underline,
+.cm-formatting.cm-formatting-image.cm-image.cm-image-marker,
+.multi-select-pill-content.external-link,
+span.cm-string.cm-url,
+.cm-s-obsidian span.cm-link,
+.cm-line span.cm-url,
+.cm-underline,
+.metadata-link-inner.external-link,
+.external-link,
+.external-link:hover,
+.external-link:visited{
+ color: var(--m-blue) !important;
+ background-image:none;
+ background-color: transparent;
+ opacity: 1;
+}
+
+/*qq internal links*/
+
+.internal-link,
+.internal-link:hover,
+.canvas-node-container .internal-link,
+.cm-formatting.cm-formatting-link.cm-hmd-barelink.cm-link,
+.cm-s-obsidian.span.cm-hmd-internal-link,
+.cm-s-obsidian.span.cm-formatting-link,
+.cm-hmd-internal-link,
+.cm-formatting-link.cm-formatting-link-start,
+.cm-formatting-link.cm-formatting-link-end,
+.cm-hmd-internal-link.cm-list-1 .cm-underline,
+.cm-hmd-internal-link .cm-underline,
+.metadata-link-inner.internal-link,
+.multi-select-pill-content.internal-link,
+.markdown-rendered.internal-link, 
+.markdown-rendered.internal-link:hover,
+.internal-link.mobile-tap,
+.internal-link.mobile-tap:hover
+{
+ color: var(--m-green)  !important;
+ background-color: transparent;
+ /*font-size: 13px;*/
+ opacity: 1;
+}
+
+/*error link*/
+.markdown-source-view.mod-cm6 .is-unresolved,
+.is-unresolved,
+.is-unresolved:hover{
+ color: var(--m-green)  !important; 
+ text-decoration-line: line-through !important;
+ text-decoration-thickness: 2px;
+ text-decoration-color: red !important;
+ font-size: 13px;
+ opacity: 1;
+}
+
+.is-mobile .is-unresolved,
+.is-mobile .is-unresolved:hover{
+ color: var(--m-green)  !important; 
+ text-decoration-line: line-through !important;
+ text-decoration-thickness: 2px;
+ text-decoration-color: red !important;
+ font-size: 15px !important;
+ opacity: 1;
+}
+
+/*qq Lists */
+
+ul{
+	font-size: 13px;
+  margin-bottom: 5px !important;
+  margin-top: 5px !important;
+}
+
+
+/*q upravit nefunguje v column*/
+.column ul > li::marker {
+  color: var(--list-marker-color);
+  font-size: var(--list-bullet-size) !important;    
+}
+
+/*qq Checkboxes */
+
+input[type=checkbox]{
+   padding-bottom: 15px !important;
+   padding-right: 15px !important;
+   
+  
+}
+
+input[type=checkbox]::after{
+	/*color check*/
+	/*background-color: red !important;*/
+	color: var(--m-red) !important;
+  border: 1px solid var(--m-navy);
+ 
+}
+
+input.task-list-item-checkbox::after{
+   border: blue 1px solid !important;
+}
+
+input[type=checkbox]:checked {
+  border: blue 1px solid !important;
+ 
+}
+
+input[type=checkbox]:hover{
+	border-color: blue;
+}
+
+/*qq- Tables */
+
+th,td{
+  font-size: 13px !important;
+}
+
+.is-mobile th,
+.is-mobile td{
+  font-size: 15px !important;
+}
+
+/*qq - tasks*/
+.HyperMD-list-line.HyperMD-list-line-1.HyperMD-task-line.cm-line{
+  padding-top: 5px;  
+  padding-bottom: 5px;
+}
+
+/* komentář */
+.cm-comment{
+  color: var(--m-dgray) !important;
+  background-color: var(--m-silver) !important;
+}
+
+/*qq - codeblock*/
+.HyperMD-codeblock.HyperMD-codeblock-bg.cm-line,
+pre,
+.cm-hmd-codeblock,
+.cm-inline-code,
+code{
+ color: red !important;
+ background-color: transparent !important;
+ padding-left: 2px !important;
+}
+
+/* komentář v bloku kódu */
+.cm-comment.cm-hmd-codeblock{
+  color: var(--m-dgray) !important;
+  background-color: var(--m-silver) !important;
+}
+
+/*qq - blockquote - citace */
+blockquote{
+	background-color: var(--m-yellow-highlight) !important;
+	margin-left: 0px !important;
+  margin-top: 5px !important;
+  padding-left: 8px !important;
+}
+
+/* first row citation*/
+.HyperMD-quote.HyperMD-quote-1.cm-line{
+	margin-left: 25px !important;
+	background-color: var(--m-yellow-highlight) !important;
+}
+
+/* next row citation */
+.HyperMD-quote.HyperMD-quote-1.HyperMD-quote-lazy.cm-line{
+	background-color: var(--m-yellow-highlight) !important;
+	margin-left: 25px !important;
+	padding-left: 10px;
+}
+
+/* show citation in dataview */
+.dataview.task-list-item blockquote{
+	margin-left: 0px !important;
+	/*border: 1px solid #999;*/
+	/*background-color: aqua !important;*/
+}
+
+/*qq callouts */
+.callout{
+	margin: 5px 0px 5px 0px !important;
+	padding: 2px 2px 2px 2px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.callout-content{
+	background-color: var(--m-white);
+	padding: 3px;
+	margin: 0px;
+}
+
+.cm-formatting.cm-formatting-quote.cm-formatting-quote-1.cm-hmd-callout.cm-quote.cm-quote-1{
+	color: gray;
+}
+
+/*qq Bases */
+.bases-table-header svg,
+.bases-table-header .bases-table-header-name{
+  color: var(--m-black);
+}
+
+.bases-toolbar-menu-item-info svg,
+.bases-toolbar-menu-item-name{
+  color: var(--m-black) !important;
+}
+
+
+
+.text-icon-button{
+  color: var(--m-black);
+}
+
+
+
+.text-icon-button.is-active.has-active-menu,
+.text-icon-button.is-active svg,
+.text-icon-button.is-active svg:hover,
+.text-icon-button.is-active:hover,
+.text-icon-button.is-active{
+  background-color: teal !important;
+  color: var(--m-white) !important;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+
+.text-icon-button.is-active  .text-button-label{
+  color: var(--m-white) !important;
+}
+
+.filter-row-actions .clickable-icon{
+  background-color: var(--m-white) !important;
+}
+
+.bases-toolbar-item.bases-toolbar-new-item-menu .text-icon-button:hover
+.bases-toolbar-item.bases-toolbar-new-item-menu .text-icon-button svg:hover,
+.bases-toolbar-item.bases-toolbar-new-item-menu .text-icon-button{
+  background-color: navy;
+  color: var(--m-white) !important;
+  border-radius: 4px;
+}
+
+
+
+.suggestion-item.bases-toolbar-menu-item.is-selected,
+.suggestion-item.bases-toolbar-menu-item:hover{
+  background-color:  var(--m-orange-highlight);
+}
+
+.search-input-container.mod-raised{
+  /*background-color: lime;*/
+  padding: 0px 5px 0px 0px;
+}
+
+.bases-toolbar-item.bases-toolbar-properties-menu .text-icon-button:hover{
+  border-radius: 6px;
+}
+
+.bases-toolbar-items .suggestion-group[data-group="properties"] .bases-toolbar-menu-item {
+  border-radius: 6px;
+}  
+
+.flair{
+  background-color: var(--m-red);
+  color: var(--m-white);
+}
+
+/*qq ----- Plugins -----------------------------------------------------------*/
+
+/*qq Plugin NoteToolbar*/
+
+.cg-note-toolbar-container.cm-embed-block.cm-callout.cg-note-toolbar-bar-container{
+  /*background-color: yellow !important;*/
+  padding: 2px !important;
+}
+
+.callout.cg-note-toolbar-callout{
+  margin-inline: 0px !important;
+  max-width:  100% !important;
+  width: 100% !important;
+  /*background-color: pink !important;*/
+}
+
+.callout-content
+{
+  /*background-color: lime !important;*/
+  width: 100% !important;
+  padding: 1px !important;
+}
+
+.callout-content .ul{
+  /*background-color: lime !important;*/
+  width: 100% !important;
+}
+
+/* nefunguje opravit*/
+.external-link.cg-note-toolbar-item  svg,
+.external-link.cg-note-toolbar-item  svg{
+  color: var(--m-black) !important;
+  background-color: var(--m-white);
+  opacity: 1;
+}
+
+/*qq -- Plugin Notebook Navigator -------------------------------------*/
+/*Shorcut*/
+.nn-navitem.nn-drag-item.nn-shortcut-item.nn-shortcut-item--removable[data-nav-item-type="note"] .nn-navitem-name{
+  color: var(--m-green);
+}
+
+.nn-navitem.nn-drag-item.nn-shortcut-item.nn-shortcut-item--removable[data-nav-item-type="note"]:hover{
+  background-color:  var(--m-green-highlight) !important;
+}
+
+.nn-navitem.nn-drag-item.nn-shortcut-item.nn-shortcut-item--removable[data-nav-item-type="folder"] .nn-shortcut-label{
+  font-weight: 500 !important;
+}
+
+.nn-navitem.nn-drag-item.nn-shortcut-item.nn-shortcut-item--removable svg{
+  color: var(--m-black);
+}
+
+/*test panelu nad soubory*/
+.nn-list-pane-scroller.nn-compact-mode .nn-header-actions.nn-header-actions--space-between:not(.is-mobile){
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+ 
+}
+
+.nn-list-pane-scroller.nn-compact-mode,
+.nn-navigation-pane-scroller,
+/*.nn-navitem.nn-folder,*/
+.nn-navitem-content{
+  padding-left: 0px !important;
+  padding-right: 2px !important;
+}
+
+.nn-file-content{
+  padding-left: 3px !important;
+  padding-right: 3px !important;
+}
+
+.nn-search-bar-container.nn-search-bar-visible{
+   padding-top: 15px;
+   height: 60px;
+}
+
+.is-mobile .nn-search-bar-container.nn-search-bar-visible{
+   padding-top: -15px;
+   height: 60px;
+}
+
+.nn-date-group-header{
+  padding-top: 6px;
+  height: 25px !important;
+  background-color:  var(--m-blue-highlight) !important;
+  color: navy !important;
+}
+
+.nn-list-pane-overlay,
+.nn-navigation-pane-overlay{
+  background-color: var(--m-white) !important;
+  opacity: 1 !important;
+}
+
+.nn-file-icon-rectangle{
+  background-color: red;
+}
+
+
+.nn-file-icon-rectangle-text{
+  color: var(--m-white);
+}
+
+.nn-color-resolver,
+.nn-list-bottom-space,
+.nn-mobile-toolbar{
+   background-color: var(--m-white) !important;
+   background-color: yellow;
+   opacity: 1 !important;
+   padding: 0px !important;
+}
+
+.nn-mobile-toolbar-left,
+.nn-mobile-toolbar-pill,
+.nn-mobile-toolbar-right{
+  /*background-color: aqua !important;*/
+  background-color: var(--m-white) !important;
+  border-radius: 0px !important;
+  opacity: 1 !important;
+}
+
+.nn-mobile-toolbar-button{
+  padding-left: 0px !important;
+}
+
+.nn-mobile-toolbar-circle{
+  /*background-color: purple !important;*/
+  background-color: var(--m-white) !important;
+  border-radius: 0px !important;
+  opacity: 1 !important;
+}
+
+.menu-item.tappable{
+  border-radius: 0px !important;
+}
+
+.nn-mobile-header.nn-mobile-header-no-icon{
+  padding: 0px !important;
+}
+
+.nn-mobile-title{
+  padding-left: 0px !important;
+}
+
+.nn-path-segment,
+.nn-path-separator{
+  display: none !important;
+}
+
+.svg-icon.lucide-chevron-left,
+.nn-path-current{
+  color: var(--m-navy) !important;
+  padding: 0px !important;
+  font-size: 15px; 
+}
+
+.nn-file-icon{
+  color: black !important;
+}
+
+.nn-action-btn.mod-warning svg,
+.nn-action-btn.mod-warning{
+  background-color:  var(--m-red) !important;
+  color: var(--m-white) !important;
+}
+
+/*qq -- Plugin Taskboard -----------------------------------------------------*/
+
+.taskItemMainContent input[type=checkbox]{
+  /*padding-top: -5px !important;*/
+  padding-bottom: 5px !important;
+  padding-right: 5px !important;
+  background-color: var(--m-white);
+  border: 1px solid var(--m-navy);
+}
+
+.taskItemFileNameSection{
+  background-color: white !important;
+  opacity: 1;
+
+}
+
+.taskItemFileName{
+  color: var(--m-green);
+  font-weight: 500;
+  opacity: 1 !important;
+  padding: 2px;
+}
+
+.taskItemTag{
+  color: black !important;
+  background-color: palegreen !important;
+  border-radius: 0px;
+  border: 1px solid var(--m-green);
+}
+.taskItemTagFrontmatter{
+  color: black !important;
+  font-size: 13px;
+  background-color: palegreen !important;
+  background-color: transparent !important;
+
+}
+
+.taskBoardColumnSecHeader{
+  padding: 1px 1px;
+}
+
+.taskBoardColumnSecHeaderTitleSecColumnTitle{
+  font-size: 14px;
+}
+
+.taskItemMainContent{
+  font-size: 15px;
+}
+
+.taskItemFooter{
+  margin: 2px;
+}
+
+.taskItemUniversalDateContainer{
+  background-color: var(--m-orange-highlight);
+  color: var(--m-black);
+  opacity: 1;
+}
+
+.taskBoardColumnSecHeaderTitleSecColumnCount{
+  color: var(--m-white);
+  background-color: var(--m-red);
+  font-size: 12px;
+  border-style: none;
+}
+
+
+
+.boardConfigModalDeleteBoardBtn{
+  background-color: var(--m-red) !important;
+  color: var(--m-white) !important;
+}
+
+.boardConfigureBtn,
+.boardConfigModalSidebarBtnAreaGlobal,
+.boardConfigModalSidebarBtnAreaAddBoard,
+.boardConfigModalAddColumnButton{
+  border-color: var(--m-navy) !important;
+  border-style: solid;
+  border-width: 2px;
+  color: var(--m-white) !important;
+  background-color: var(--m-navy) !important;
+}
+
+.boardConfigModalSidebarSaveBtn{
+  background-color: var(--m-teal) !important;
+  color: var(--m-white) !important;
+}
+
+.boardConfigModalSidebarBtnArea .boardConfigModalSettingDescription{
+  color: var(--m-teal) !important;
+  font-weight: bold;
+}
+
+.boardConfigModalSidebarBtnArea-btn{
+  border: 1px solid var(--m-black);
+}
+
+.boardSidebarCard .boardSidebarCardTitle{
+  color: var(--m-dgray) !important;
+}
+
+.boardSidebarCard--active .boardSidebarCardTitle{
+  color: var(--m-white) !important;
+}
+
+.nn-settings-tab-button.clickable-icon.is-active.mod-cta,
+.boardTitleButtonActive,
+.boardSidebarCard--active,
+.boardConfigModalSidebarBtnArea-btn-active{
+  border: 2px solid var(--m-teal)!important;
+  color: var(--m-white) !important;
+  background-color: var(--m-teal) !important;
+}
+
+
+
+
+.boardSidebarCard .taskCountContainerProgressCount{
+  color: var(--m-dgray);
+}
+
+.boardSidebarCard--active .taskCountContainerProgressCount{
+  color: var(--m-white);
+}
+
+.boardTitleButton,
+.boardSidebarCard,
+textarea,
+hr,
+.boardConfigModalColumnRowContentColDatedVal,
+.boardConfigModalColumnRow,
+.boardConfigModalMainContent-Active-Body input{
+  border-color: var(--m-dgray) !important;
+  color: var(--m-black) !important;
+}
+
+
+
+.taskCountContainerProgressBar{
+  border: 1px solid var(--m-black);
+  background-color: var(--m-white);
+}
+
+.taskCountContainerProgressBarIndicator{
+  background-color: var(--m-green);
+	}
+.hamburgerMenuButton svg{
+  color: var(--m-black);
+}  
+
+.taskBoardHeaderBtns svg{
+  color: var(--m-black);
+}
+
+.taskCountContainerTaskCount{
+  background-color: var(--m-red);
+  color: var(--m-white);
+  padding: 5px;
+}
+
+
+button.mod-warning{
+  background-color:  var(--m-red) !important;
+  /*color: var(--m-white) !important;*/
+}
+
+.setting-item input,
+.setting-item textarea{
+  border-radius: 0px !important;
+}
+
+.filter-config-section{
+  width: 100px !important;
+}
+
+.filter-config-section svg{
+  padding: 0px 10px;
+  color: black;
+  height: 45px;
+  width: 45px;
+}
+
+.save-filter-config-btn.compact-btn,
+.load-filter-config-btn.compact-btn{
+  border-radius: 0px;
+}
+
+.taskItemiconButton svg:hover{
+  color: var(--m-black) !important;
+}
+
+/*qq Plugin Spaced repetition ----*/
+.modal-content.sr-modal-content{
+	margin-bottom: 50px;
+}
+
+.sr-flashcard .sr-context{
+	color: var(--m-navy);
+}
+
+button.sr-button{
+	/*color: lime !important;*/
+	background-color: #2094f3 !important;	
+}
+
+button.sr-button .svg-icon.lucide-edit,
+button.sr-button .svg-icon.lucide-refresh-cw,
+button.sr-button .svg-icon.lucide-chevrons-right,
+button.sr-button .svg-icon.lucide-info{
+  color: var(--m-white);
+}
+
+
