@@ -1,1 +1,1 @@
-beta-theme for Obbsidian..md
+theme for Obbsidian.md
